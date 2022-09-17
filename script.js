@@ -2,7 +2,7 @@ console.log("import it's working")
 
 
 
-function getComputerChoice(max){
+function getComputerChoice(){
 
     let ComputerSelection =  Math.floor(Math.random() * 3);
 
@@ -18,27 +18,80 @@ function getComputerChoice(max){
 
 }
 
-function getPlayerSelection() {
+function getPlayerChoice() {
 
-    playerChoice = prompt("Select Rock, paper or Scissors")
-
-    let playerSelection = 0;
     
-    if (playerChoice == 'rock' || 'ROCK' || 'Rock'){
-        playerSelection = 0;
-    } else if (playerChoice == 'paper' || 'PAPER' || 'Paper'){
-        playerSelection = 1;
-    } else if (playerChoice == 'scissors' || 'SCISSORS' || 'Scissors'){
-        playerSelection = 2;
-    } 
+    const playerChoice = prompt('Enter paper, rock or scissors');
+    let playerSelection;
+   
+  
+    switch (playerChoice) {
+        
 
-    return playerSelection;
+        // rock
+        case 'rock':{
+            playerSelection = 0;
+           break;
+
+        }
+        case 'ROCK':{
+            playerSelection = 0;
+           break;
+        }
+        case 'Rock':{
+            playerSelection = 0;
+           break;
+        }
+        case 'rOCK':{
+            playerSelection = 0;
+           break;
+        }
+
+        // paper    
+        case 'paper':{
+            playerSelection = 1;
+           break;
+        }
+        case 'PAPER':{
+            playerSelection = 1;
+           break;
+        }
+        case 'Paper':{
+            playerSelection = 1;
+           break;
+        }
+        case 'pAPER':{
+            playerSelection = 1;
+           break;
+        }
+
+        // scissors
+
+        case 'scissors':{
+            playerSelection = 2;
+           break;
+        }
+        case 'SCISSORS':{
+            playerSelection = 2;
+           break;
+        }
+        case 'Scissors':{
+            playerSelection = 2;
+           break;
+        }
+        case 'sCISSORS':{
+            playerSelection = 2;
+           break;
+        }
+        
+      }
+      return playerSelection;
 }
 
 
-
+console.log(getPlayerChoice());
 
 console.log(getComputerChoice());
-console.log(getPlayerSelection());
+
 
 
