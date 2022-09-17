@@ -96,31 +96,31 @@ function playRound(playerSelection, computerSelection) {
     if (playerSelection === 0) {
 
         if  (playerSelection === 0 && computerSelection === 0) {
-            roundResult = 'draw'      
+            roundResult = 'No winner'      
     } else if (playerSelection === 0 && computerSelection === 1) {
-            roundResult = 'lose'
+            roundResult = 'You Lose'
     } else if (playerSelection === 0 && computerSelection === 2) {
-            roundResult = 'winner'
+            roundResult = 'You Win'
     }
 
     } else if (playerSelection === 1){
 
         if  (playerSelection === 1 && computerSelection === 0) {
-            roundResult = 'winner'      
+            roundResult = 'You Win'      
     } else if (playerSelection === 1 && computerSelection == 1) {
-            roundResult = 'draw'
+            roundResult = 'No winner'
     } else if (playerSelection === 1 && computerSelection === 2) {
-            roundResult = 'lose'
+            roundResult = 'You Lose'
     }
 
     } else if (playerSelection === 2){
 
         if  (playerSelection === 2 && computerSelection === 0) {
-            roundResult = 'lose'      
+            roundResult = 'You Lose'      
     } else if (playerSelection === 2 && computerSelection == 1) {
-            roundResult = 'winner'
+            roundResult = 'You Win'
     } else if (playerSelection === 2 && computerSelection === 2) {
-            roundResult = 'draw'
+            roundResult = 'No winner'
     }
 
     }
