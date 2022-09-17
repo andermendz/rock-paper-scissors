@@ -88,6 +88,12 @@ function getPlayerChoice() {
       return playerSelection;
 }
 
+function playRound(playerSelection, computerSelection) {
+    
+    
+
+  }
+
 
 console.log(getPlayerChoice());
 
