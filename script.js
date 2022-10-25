@@ -1,5 +1,7 @@
 console.log("import it's working");
 
+   // TODO DOM
+
 function getComputerChoice() {
   let ComputerSelection = Math.floor(Math.random() * 3);
 
